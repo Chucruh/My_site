@@ -1,0 +1,119 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<title>Mis Perris</title>
+		<link rel="stylesheet" href="{% static 'estilo.css' %}">
+		<link type="text/css" rel="stylesheet" href="{% static 'materialize/css/materialize.min.css' %}">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="nav-wrapper">
+					<ul id="nav-mobile" class="right">
+						<li><a href="#!"><img src="{% static 'img/logo.png' %}" alt="logo"></a></li>
+						<li><a href="{% url 'post' %}">Inicio</a></li>
+						<li><a href="#salto1">Quienes somos</a></li>
+						<li><a href="#salto2">Servicios</a></li>
+						<li><a href="{% url 'con' %}">Contactanos</a></li>
+						<li><a href="{% url 'reg' %}">Crear cuenta</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<section>
+			<h2 style="display:none;">Carrusel</h2>
+			<div class="row">
+				<div class="col s12">
+					<div id="d3" class="carousel carousel-slider center">
+						<div class="carousel-fixed-item center">				
+						</div>
+						<div class="carousel-item">
+							<img src="{% static 'img/Tom.jpg' %}" style="height:auto;" alt="Tom">
+						</div>
+						<div class="carousel-item">
+							<img src="{% static 'img/Apolo.jpg' %}" style="height:auto;" alt="Apolo">
+						</div>
+						<div class="carousel-item">
+							<img src="{% static 'img/Duque.jpg' %}" style="height:auto;" alt="Duque">
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="{% static 'jquery-3.3.1.min.js' %}"></script>
+			<script src="{% static 'materialize/js/materialize.min.js' %}"></script>
+
+			<script>$(document).ready(function(){
+				$('.carousel').carousel();
+				});</script>
+				<script>$(document).ready(function()
+				{
+				$('.sidenav').sidenav();
+				});
+			</script>		
+		</section>
+		<div class="row">
+			<br><br>
+			<div class="center">
+			<A href="http://www.facebook.com"><IMG src="{% static 'img/facebook.PNG' %}" alt="facebook"></A>
+			<A href="http://www.google.com"><IMG src="{% static 'img/google.PNG' %}" alt="google"></A>
+			<A href="http://www.instagram.com"><IMG src="{% static 'img/instagram.PNG' %}" alt="instagram"></A>
+			<A href="http://mail.google.com"><IMG src="{% static 'img/gmail.PNG' %}" alt="gmail"></A>
+			</div>
+			<br><br>
+		</div>
+		<div id="cuerpo">
+			<a id="salto1">
+				<div id="d1">
+					<div class="row">
+						<div id="d5" class="col s12 m12 l6 xl6">
+							<img src="{% static 'img/rescate.jpg' %}" height=350 width=450 Style="float:right;" alt="rescate">
+						</div>
+						<div class="col s12 m12 l6 xl6">
+							<p style="font-size:150%; text-align:left;">RESCATE</p>
+							<p style="font-size:150%; text-align:left;">ETAPA UNO</p>
+							<br>
+							<HR>
+							<br>
+							<p style="font-size:120%; text-align:left;">Rescatamos perros en situacion de peligro y/o abandono, los reabilitamos y los
+								preparamos para buscarles un hogar</p>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a id="salto2">
+				<div class="row">
+					<div id="d4" class="col s12 l6 push-l6">
+						<img src="{% static 'img/crowfunding.jpg' %}" height=300 width=400 alt="crowfunding">
+					</div>
+					<div id="d2" class="col s12 l6 pull-l6">
+						<p style="font-size:150%; text-align:right;">CROWDFUNDING</p>
+						<br>
+						<p style="font-size:150%; text-align:right;">FINANCIAMIENTO</p>
+						<br>
+						<HR>
+						<br>
+						<p style="font-size:120%; text-align:right;">Sigue nuestras redes sociales para informarte acerca de las diversas campañas y
+							actividades que relizamos para obtener financiamiento para seguir ayudando</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="row">
+			<div id="marco1">
+				<img src="{% static 'img/Oso.jpg' %}" title="Nombre: Oso Descripcion: perrito de pelo negro y ondulado" style="height:36%; width:100%;" alt ="oso">
+				<img src="{% static 'img/Maya.jpg' %}" title="Nombre: Maya Descripcion: perrita de orejas caidas, pelo corto y de color cafe con matices de color mas oscuro" style="height:32%; width:100%;" alt ="maya">	
+				<img src="{% static 'img/Wifi.jpg' %}" title="Nombre: Wifi Descripcion: perrito de pelo corto, de color negro y blanco" style="height:32%; width:100%;" alt ="wifi">
+			</div>
+			<div id="marco2">
+				<img src="{% static 'img/Chocolate.jpg' %}" title="Nombre: Chocolate Descripcion: perro grande de pelo corto y rubio" style="height:50%; width:100%;" alt ="chocolate">
+				<img src="{% static 'img/Pexel.jpg' %}" title="Nombre: Pexel Descripcion: perrito peque&ntilde;o de pelo medio y rubio" style="height:50%; width:100%;" alt ="pexel">
+			</div>
+			<div id="marco3">
+				<img src="{% static 'img/Bigotes.jpg' %}" title="Nombre: Bigotes Descripcion: perrito de estatura media de ojos cafes, pelo medio y rubio" style="height:70%; width:100%;" alt ="bigotes">
+				<img src="{% static 'img/Luna.jpg' %}" title="Nombre: Luna Descripcion: perrita peque&ntilde;a de ojitos claros y pelo de color caje oscuro" style="height:30%; width:100%;" alt ="luna">
+			</div>
+		</div>
+	</body>
+</html>
