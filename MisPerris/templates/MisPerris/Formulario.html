@@ -12,38 +12,48 @@
 		<div class="row">
 			<form class="col s12">
 				<div class="row">
-					<div class="input-field col s6">
+					<div class="input-field col s12 m6">
 						<input id="nombre" type="text" onblur="validarNombre()">
 						<label for="nombre">Nombre</label>
 					</div>
-					<div class="input-field col s6">
+					<div class="input-field col s12 m6">
 						<input id="apellido" type="text" onblur="validarApellido()">
 						<label for="apellido">Apellido</label>
 					</div>
 				</div>
 				<div class="row">
-					<div class="input-field col s6">
+						<div class="input-field col s12 m6">
+							<input id="contrasenna" type="text" onblur="validarContrasenna()">
+							<label for="contrasenna">Contraseña</label>
+						</div>
+						<div class="input-field col s12 m6">
+							<input id="v_contrasenna" type="text" onblur="compararContrasenna()">
+							<label for="v_contrasenna">Repite tu contraseña</label>
+						</div>
+					</div>
+				<div class="row">
+					<div class="input-field col s12 m6">
 						<input id="run" type="text" placeholder="1111111-1" onblur="validarRun()">
 						<label for="run">Run</label>
 					</div>
-					<div class="input-field col s6">
+					<div class="input-field col s12 m6">
 						<input id="email" type="email" placeholder="juanito@ejemplo.cl" onblur="validarFecha()">
 						<label for="email">Email</label>
 					</div>
 				</div>
 				<div class="row">
-					<div class="input-field col s6">
+					<div class="input-field col s12 m6">
 						<input id="telefono" type="number" placeholder="12345678" onblur="validarNumero()">
 						<label for="telefono">Telefono</label>
 					</div>
-					<div class="input-field col s6">
+					<div class="input-field col s12 m6">
 						<input id="fechaNac" type="text" value="" placeholder="01/01/2000" onblur="validarFecha()">
 						<label for="fechaNac">Fecha de nacimiento</label>
 					</div>
 				</div>
 				<label>Región</label>
 				<div class="row">
-					<div class="input-field col s6">
+					<div class="input-field col s12 m6">
 						<select id="region" class="browser-default">
 							<option value="" disabled selected>Región</option>
 							<option value="1">Región Metropolitana</option>
@@ -54,7 +64,7 @@
 				</div>
 				<label>Ciudad</label>
 				<div class="row">
-					<div class="input-field col s6">
+					<div class="input-field col s12 m6">
 						<select id="ciudad" class="browser-default">
 							<option value="" disabled selected>Ciudad</option>
 							<option value="1">San Bernardo</option>
@@ -65,7 +75,7 @@
 				</div>
 				<label>Tipo de vivienda</label>
 				<div class="row">
-					<div class="input-field col s6">
+					<div class="input-field col s12 m6">
 						<select id="tip_vivienda" class="browser-default">
 							<option value="" disabled selected>Viviendas</option>
 							<option value="1">Casa con patio grande</option>
@@ -75,7 +85,7 @@
 						</select>
 					</div>
 				</div>
-					<div class="input-field col s6">
+					<div class="input-field col s12 m6">
 						<button class="btn waves-effect waves-light" id="id_aceptar" type="submit" name="aceptar">Aceptar</button>
 						<button class="btn waves-effect waves-light" id="id_cancelar" type="reset" name="cancelar">Cancelar</button>
 					</div>

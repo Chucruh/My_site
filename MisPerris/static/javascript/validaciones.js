@@ -72,4 +72,29 @@ function validarFecha()
 		}
 	}
 	
-	
+function validarContrasenna()
+	{
+		var contrasena = document.getElementById("contrasenna").value;
+		
+		if(contrasena.length > 7){
+			document.getElementById("contrasenna").style.color = "green";
+		}else{
+			document.getElementById("contrasenna").focus();
+			document.getElementById("contrasenna").style.color = "red"; 
+		}
+	}
+
+function compararContrasenna()
+	{
+		var contrasena = document.getElementById("contrasenna").value;
+		var validador = document.getElementById("v_contrasenna").value;
+
+		if(contrasena == validador){
+			document.getElementById("contrasenna").style.color = "green";
+			document.getElementById("v_contrasenna").style.color = "green";
+		}else{
+			document.getElementById("contrasenna").focus();
+			document.getElementById("contrasenna").style.color = "red";
+			document.getElementById("v_contrasenna").style.color = "red";
+		}
+	}
