@@ -10,3 +10,7 @@ def Registro(request):
 
 def Formulario(request):
     return render(request, 'MisPerris/Formulario.html', {})
+
+def Iniciar_sesion(request):
+    return render(request, 'MisPerris/Iniciar_sesion.html', {})
+

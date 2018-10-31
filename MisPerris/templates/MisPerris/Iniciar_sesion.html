@@ -1,0 +1,44 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Registrarse</title>
+		<link rel="stylesheet" href="{% static 'Estilo.css' %}">
+		<link type="text/css" rel="stylesheet" href="{% static 'materialize/css/materialize.min.css' %}">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<div class="row">
+				<div class="col s12">
+					<ul id="nav-mobile">
+						<li><a href="#!"><img src="{% static 'img/logo.png' %}"></a></li>
+						<li><a href="{% url 'post' %}">Volver</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section>
+            <br><br>
+			<div class="row">
+                <div class="col s8 push-s2" id="cuerpo">
+                    <div class="row">
+                        <div class="col s6">
+                            <input id="email" type="text">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col s6">
+                            <input id="contrasenna" type="password">
+                            <label for="contrasenna">Contraseña</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s4 push-s5">
+                            <button class="btn waves-effect waves-light" id="iniciar" type="submit" name="iniciar">Iniciar Sesión</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</section>
+	</body>
+</html>

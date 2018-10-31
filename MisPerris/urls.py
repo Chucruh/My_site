@@ -7,6 +7,7 @@ urlpatterns = [
     url('^Contactanos/', views.Contactanos,name="con"),
     url('^Registro/', views.Registro,name="reg"),
     url('^Formulario/', views.Formulario,name="for"),
+    url('^Iniciar_sesion/', views.Iniciar_sesion,name="ini"),
 ]
 
 
